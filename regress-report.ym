@@ -46,86 +46,86 @@
 bugreports:
 - summary: |
       Кнопка "next" не отображается после выбора пустой строки категории товаров
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Выбрать пустую строку категории товаров
-    expected-result: |
+  expected-result: |
       Кнопка "next" отображается при выборе пустой строки в категориях товаров
-    actual-result: |
+  actual-result: |
       При выборе пустой строки в категориях товаров кнопка "next" перестает отображатся на странице
 
 - summary: |
       Картинки товаров в карточках некоторых товаров отображаются не полностью (обрезванными) при разрешениях для мобильных устройств
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Зайти в DevTools
       3. Выбрать разрешения Mobile S, Mobile M, Mobile L
-    expected-result: |
+  expected-result: |
       При выборе разрешений Mobile S, Mobile M, Mobile L картинки товаров отображаются полностью  в карточках товаров
-    actual-result: |
+  actual-result: |
       При выборе разрешений  Mobile S, Mobile M, Mobile L картинки товаров отображаются обрезанными сверху и/или снизу в карточках некоторых товаров
 
 - summary: |
       При переходе на разные страницы магазина меняется язык интерфейса с русского на английский
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Выбрать язык интерфейса Russian
       2. Перейти в корзину
       4. Вернуться на главную страницу магазина
-    expected-result: |
+  expected-result: |
       При переходе с главной страницы магазина на другие страницы, язык интерфейса сохраняется изначально выбранный
-    actual-result: |
+  actual-result: |
       Если язык интерфейса выбран Русский (Russian), и далее перейти с главной страницы магазина в корзину, а затем вернуться на главный экран, то язык интерфейса поменяется на английский (English)
 
 - summary: |
       Кнопка "clean" (или "удалить")  в корзине у каждого товара в каждой строчке на разном уровне (по вертикали)
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Добавить в корзину несколько разных товаров
       3. перейти в корзину
-    expected-result: |
+  expected-result: |
       Кнопка "clean" ( или "удалить") в каждой строке отображается на одном уровне по вертикали
-    actual-result: |
+  actual-result: |
       Кнопка "clean" ( или "удалить") отображается на разных уровнях в каждой строчке товара
 
 - summary: |
       В корзине остаются товары после очистки корзины и перехода на главный экран
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Добавить в корзину товары
       3. перейти в корзину
       4. Нажать кнопку "очистить корзину" или "clean cart"
       5. Перейти на главный экран
-    expected-result: |
+  expected-result: |
       Кнопка "очистить корзину" или "clean cart" удаляет все товары из корзины и после перехода на главный экран в корзине нет товаров
-    actual-result: |
+  actual-result: |
       После нажатия кнопки "очистить корзину" или "clean cart" на странице корзины товары не отображаются; после перехода на главный экран в корзине отображается значок с количеством товаров; при возвращении в корзину  все "удаленные" ранее товары остаются в корзине
 
 - summary: |
       Кнопка "clean" (или "удалить")  в корзине у каждого товара в каждой строчке на разном уровне (по вертикали)
-    environment: |
+  environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Зайти на страницу магазина https://hexlet-products-store.vercel.app/
       2. Добавить в корзину несколько разных товаров
       3. перейти в корзину
-    expected-result: |
+  expected-result: |
       Кнопка "clean" ( или "удалить") в каждой строке отображается на одном уровне по вертикали
-    actual-result: |
+  actual-result: |
       Кнопка "clean" ( или "удалить") отображается на разных уровнях в каждой строчке товара
