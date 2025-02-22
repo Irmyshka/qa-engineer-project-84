@@ -1,5 +1,6 @@
 ---
-- summary: |
+test-cases:
+ - summary: |
     Проверка добавления товара в корзину
   status: pass
    
