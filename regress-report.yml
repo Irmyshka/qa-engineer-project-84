@@ -2,93 +2,93 @@
 test-cases:
  - summary: |
     Проверка добавления товара в корзину
-  status: pass
-   
-- summary: |
+   status: pass
+ 
+ - summary: |
     Проверка оформления заказа
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Проверка фильтра товаров по категориям 
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Проверка поиска товаров по ключевому слову
-  status: fail
+   status: fail
 
-- summary: |
+ - summary: |
     Проверка фильтра товаров по бренду
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Проверка фильтра товаров по цене
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Проверка поиска фильтра по цене - ввод отрицательных значений
-  status: fail
+   status: fail
 
-- summary: |
+ - summary: |
     Удаление товара из корзины
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Удаление всех товаров из корзины
-  status: pass
+   status: pass
 
-- summary: |
+ - summary: |
     Проверка продолжить покупки
-  status: pass
-
- bugreports:
-- summary: |
+   status: pass
+   
+bugreports:
+ - summary: |
       Кнопка "next" не отображается после выбора пустой строки категории товаров
-  environment: |
+   environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-  steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Выбрать пустую строку категории товаров
-  expected-result: |
+   expected-result: |
       Кнопка "next" отображается на странице
-  actual-result: |
+   actual-result: |
       кнопка "next" не отображается на странице
 
-- summary: |
+ - summary: |
       Картинки товаров в карточках некоторых товаров отображаются некорректно в мобильной версии
-  environment: |
+   environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-  steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Зайти в DevTools
       3. Выбрать разрешения Mobile S, Mobile M, Mobile L
-  expected-result: |
+   expected-result: |
       В мобильной версии картинки товаров отображаются корректно
-  actual-result: |
+   actual-result: |
       В мобильной версии картинки товаров отображаются некорректно
 
-- summary: |
+ - summary: |
       При переходе на разные страницы магазина меняется язык интерфейса с русского на английский
-  environment: |
+   environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-  steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Выбрать язык интерфейса Russian
       2. Перейти в корзину
       3. Вернуться на главную страницу магазина
-  expected-result: |
+   expected-result: |
       Русский язык интерфейса на всех страницах магазина
-  actual-result: |
+   actual-result: |
      язык интерфейса меняется на английский (English)
 
-- summary: |
+ - summary: |
       Кнопка "clean" (или "удалить")  в корзине у каждого товара в каждой строчке на разном уровне (по вертикали)
-  environment: |
+   environment: |
       Google Chrome 133.0.6943.59 (Официальная сборка), (64 бит)
       Windows 10 Version 22H2
-  steps-to-reproduce: |
+   steps-to-reproduce: |
       1. Добавить в корзину несколько разных товаров
       2. перейти в корзину
-  expected-result: |
+   expected-result: |
       Кнопка "clean" ( или "удалить") в каждой строке отображается на одном уровне по вертикали
-  actual-result: |
+   actual-result: |
       Кнопка "clean" ( или "удалить") отображается хаотично в каждой строке
